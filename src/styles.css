@@ -1,0 +1,125 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body {
+    padding: 0;
+    margin: 0
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+.row{
+    flex: 33%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.square {
+    flex: 33%;
+    height: 100%;
+    border: 1px solid black;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 30px;
+    color: black;
+}
+.square:active {
+    background-color: rgb(88, 136, 224);
+    ;
+}
+
+.win-screen-bg {
+    /* The image used */
+    
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .win-screen {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .form {
+        width:55%;
+        height: 50%;
+        display:flexbox;
+        margin: 25px auto 0;
+        padding: 1em;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        text-align: center;
+  }
+
+  .formTwo {
+    width:55%;
+    height: 50%;
+    display:flexbox;
+    margin: 25px auto 0;
+    padding: 1em;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+  }
+  .submit:hover{
+    background-color: #218824; 
+    color: white;
+    cursor: pointer
+  }
+  .submitTwo:hover{
+    background-color: #b1261c; 
+    color: white;
+    cursor: pointer
+  }
+
+  .links {
+     text-align: center;
+     
+  }
+
+  #playerinfo {
+    display: inline-flex;
+}
+
+.playerlist {
+
+color: #218824;
+
+}
